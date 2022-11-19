@@ -1,0 +1,10 @@
+def celsToFahr(tempCels) :
+  # @param tempCels: float (temperatura in gradi Celsius) 
+  x = tempCels * 9/5  
+  t_fah = x+32 
+  print 'valore temperatura in gradi Fahrenheit: ', t_fah 
+  print 'valore temperatura in gradi Celsius: ', tempCels
+c = 20 
+celsToFahr(c)
+ 
+

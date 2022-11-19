@@ -1,0 +1,6 @@
+def foo(x,y):  
+  # @param x : float 
+  #@param y : float 
+  a = x + sqrt(y) 
+  b = 2.0**a * log(y+3,5*x) 
+  print a + b 
