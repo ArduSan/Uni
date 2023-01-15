@@ -4,10 +4,11 @@ def prodottoM(mat1,mat2):
 #@return matrix
     matP=[]
     for i in range(0,len(mat1)):
-        som=0
-        for j in range(0,len(mat1[i])):
-            prod=mat1[i][j]*mat2[j][i]
-            som+=prod
+        for n in range(0,len(mat2)):
+            som=0
+            for j in range(0,len(mat1[i])):
+                prod=mat1[i][j]*mat2[j][n]
+                som+=prod
         matP.append(som)
     return matP
 def matrix(numR,numC):
