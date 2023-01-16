@@ -1,6 +1,4 @@
 ##########PROBLEMA 1
-from re import L
-
 
 def countDigit(str):
 #@param str:string 
