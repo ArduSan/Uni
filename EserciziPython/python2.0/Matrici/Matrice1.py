@@ -1,5 +1,8 @@
 
 def invertiCR(x,R,C):
+#@param x:int
+#@param R:int; number of rows
+#@param C:int; number of columns
   mat1=matrix(R,C)
   riga=[]
   colonna=[]
