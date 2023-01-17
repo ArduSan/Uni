@@ -6,8 +6,6 @@ class Stack:
     def pop(self):
         if len(self.List)>0:
             self.List.pop(len(self.List)-1)
-        else:
-            print "la lista è vuota non puoi rimuovere altri elementi"
     def top(self):
         print self.List[len(self.List)-1]
     def empty(self):
