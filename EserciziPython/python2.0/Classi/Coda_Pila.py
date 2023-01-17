@@ -4,11 +4,16 @@ class Stack:
     def push(self,elem):
         self.List.append(elem)
     def pop(self):
-        self.List.pop(len(self.List)-1)
+        if len(self.List)>0:
+            self.List.pop(len(self.List)-1)
+        else:
+            print "la lista è vuota non puoi rimuovere altri elementi"
     def top(self):
         print self.List[len(self.List)-1]
     def empty(self):
         if self.List==[]:
-            print True
+            return True
+        else:
+            return False
     
 
