@@ -17,7 +17,7 @@ class Stack:
 class Queue:
     def __init__(self):
         self.List2=[]
-    def in(self,elem):
+    def ini(self,elem):
         self.List2.append(elem)
     def out(self):
         if len(self.List2)>0:
@@ -27,7 +27,7 @@ class Queue:
     def last(self):
         print self.List2[len(self.List2)-1]
     def empty(self):
-        if self.List==[]:
+        if self.List2==[]:
             return True
         else:
             return False
