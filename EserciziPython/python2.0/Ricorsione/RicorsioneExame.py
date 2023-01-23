@@ -5,7 +5,7 @@ def ricors(s):
         return True
     else:
         slef=s[:len(s)/2]
-        sright=s[lens(s)/2:]
+        sright=s[len(s)/2:]
         if slef[0]==sright[0]:
             return ricors(slef[1:]+sright[1:])
         else:

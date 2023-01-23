@@ -27,23 +27,19 @@ class matrix:
                 s.mat[i][j]=self.mat[i][j]+otherMat.mat[i][j]
         return s
     def mult(self,otherMat):
-        s=matrix(self.rows,self.cols)
-        if controllo(self,otherMat):
-            for i in range(0,len(self.mat))
-                Ls=[]
-                for j in range(0,len(otherMat.mat[0])):
-                    som=0
-                    for m in range((0,len(self.mat[i]))):
-                        prod=self.mat[i][j]*otherMat.mat[j][n]
-                        som+=prod
-                    Ls.append(som)
-                s.mat.append(Ls)
+        s=matrix(self.rows,otherMat.cols)
+        if self.cols!=otherMat.rows:
+            print "not compatible dimensions"
+            return matrix(0,0)
+        for i in range(0,len(self.mat))
+            Ls=[]
+            for j in range(0,len(otherMat.mat[0])):
+                som=0
+                for m in range((0,len(self.mat[i]))):
+                    prod=self.mat[i][j]*otherMat.mat[j][n]
+                    som+=prod
+                Ls.append(som)
+            s.mat.append(Ls)
         return s.mat
-        def controllo(self,otherMat):
-            for n in range(0,len(self.mat)):
-                if len(otherMat.mat)==len(self.mat[n]):
-                    return True
-                else:
-                    return False
             
     
