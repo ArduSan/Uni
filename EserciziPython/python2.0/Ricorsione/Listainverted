@@ -1,8 +1,0 @@
-def InvertedList(L):
-#@param L:list 
-#@return list
-    if not L:
-        return []
-    else:
-        return [L[-1]]+InvertedList(L[1:])
-    
